@@ -1,0 +1,93 @@
+
+
+.containerMainPage{
+    width: 100%;
+}
+
+.background-container {
+    background-color: rgb(236, 223, 180);
+    z-index: 40;
+
+    img{
+        transition: filter 0.4s ease-in-out, border-radius 0.6s ease-in-out, border-width 0.6s ease-in-out;
+
+        &:hover{
+            filter: blur(1px); 
+            border-radius: 50%;
+            border-width: 1rem;
+            border-style: hidden;
+        }
+    }
+}
+
+.fondoHome{
+
+    padding: 20%;
+
+    background-image: url(../assets/images/integrateb-banner-1.png);
+    background-size: cover;
+
+    transition: filter 0.4s ease;
+
+    &:hover{
+        filter: blur(4px) saturate(2);
+    }
+    
+}
+  
+
+h2 {
+    font-size: 5rem;
+    line-height: 1;
+
+    span{
+        padding-top: 1rem;
+
+        transition: filter 0.2s ease-in-out;
+
+        &:hover{
+            filter: blur(3px); 
+            letter-spacing: 0.7rem;
+        }
+    }
+  }
+
+  .flashcards{
+    width: auto;
+    height: 20rem;  
+    background-color: rgb(236, 223, 180);
+    z-index: 40;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .contadorTiempo{
+        width: 5rem;
+
+        span{
+            font-size: 2rem;
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    .flashcards-texto{
+        font-size: 5rem;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+    }
+
+    input{
+        width: 10rem;
+        border-width: 0.2rem;
+        border-style: dotted;
+        border-color: rgb(0, 0, 0);
+        border-radius: 25%;
+
+        &:hover{
+            letter-spacing: 0.7rem;
+        }
+    }
+  }

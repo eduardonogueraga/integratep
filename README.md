@@ -1,5 +1,7 @@
 # AppIntegratep
 
+Este proyecto tiene como objetivo la integración de las personas migrantes a nuestra cultura.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
 
 ## Development server
