@@ -1,0 +1,61 @@
+
+
+header {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.9;
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 35%, rgba(116,116,221,1) 100%, rgba(0,212,255,1) 100%);
+
+    -webkit-box-shadow: 0px 0px 20px  0 #000000;
+    -moz-box-shadow: 0px 0px 20px  0 #000000;
+    box-shadow: 0px 0px 20px 0 #000000;
+
+    .logo {
+        width: 5rem;
+        height: 5rem;
+
+        img {
+
+            border-radius: 25%;
+            transition: 0.3s ease-in-out;
+            &:hover {
+             border-radius: 50%;
+            }
+        }
+    }
+
+    .tituloHeader{
+        color: aliceblue;
+
+        transition: 1s ease-in-out;
+
+        &:hover{
+            font-size: 4rem;
+            letter-spacing: 1rem;
+        }
+    }
+
+    a {
+        color: #ffffff;
+
+        transition: 0.2s ease-in-out;
+        &:hover{
+            font-size: 1rem;
+            color: burlywood;
+        }
+    }
+
+    button{
+        color: #ffffff;
+        background-color: #000000;
+        border-color: #000000;
+
+        &:hover{
+            font-size: 1rem;
+        }
+    }
+}

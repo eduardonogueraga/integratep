@@ -6,33 +6,41 @@
 .background-container {
     background-color: rgb(236, 223, 180);
     z-index: 40;
+    max-width: screen;
+    width: 100%;
 
-    img{
+    #imagen1 {
         transition: filter 0.4s ease-in-out, border-radius 0.6s ease-in-out, border-width 0.6s ease-in-out;
 
-        &:hover{
+        &:hover {
             filter: blur(1px); 
             border-radius: 50%;
             border-width: 1rem;
             border-style: hidden;
         }
     }
+
 }
 
-.fondoHome{
-    padding: 20%;
+.fondoHome {
+    width: 100%;
 
-    background-image: url(/app-integratep/src/assets/images/integrateb-banner-1.png);
     background-size: cover;
+    
 
-    transition: filter 0.4s ease;
+    img{
+        width: 100%;
+        height: auto;
 
-    &:hover{
-        filter: blur(4px) saturate(2);
+        transition: filter 0.8s ease-in-out;
+
+        &:hover {
+            filter: blur(1px) saturate(2);
+        }
     }
     
 }
-  
+
 
 h2 {
     font-size: 5rem;
@@ -51,18 +59,28 @@ h2 {
   }
 
   .flashcards{
+    overflow: hidden;
+
     width: auto;
-    height: 20rem;  
+    min-height: 20rem;
+    height: fit-content;  
     background-color: rgb(236, 223, 180);
     z-index: 40;
-
+    padding-bottom: 5rem;
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 5rem auto 10rem;
+    grid-template-rows: auto-fit auto-fit auto-fit;
     
     .contadorTiempo{
+        grid-column: 1;
+        grid-row: 1;
+
+        display: flex;
+
         width: 5rem;
+        margin-left: 5rem;
+        margin-top: 5rem;
 
         span{
             font-size: 2rem;
@@ -72,20 +90,37 @@ h2 {
     }
 
     .flashcards-texto{
+        grid-column: 2;
+        grid-row: 2;
+
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+
         font-size: 5rem;
         font-weight: 500;
         color: rgb(0, 0, 0);
     }
 
     input{
-        width: 10rem;
-        border-width: 0.2rem;
-        border-style: dotted;
-        border-color: rgb(0, 0, 0);
-        border-radius: 25%;
+        grid-column: 2;
+        grid-row: 3;
+        padding: 0 5rem 0 5rem;
+        margin: 5rem 10rem 0 10rem;
 
-        &:hover{
-            letter-spacing: 0.7rem;
+        width: auto-fill;
+        height: 5rem;
+
+        border-width: 0.1rem;
+        border-style: groove;
+        border-color: rgb(0, 0, 0);
+        border-radius: 1rem;
+
+        box-shadow: 1px 1px 20px 0 #000000;
+
+        &:hover {
+            border-width: 0.2rem;
         }
+
     }
   }

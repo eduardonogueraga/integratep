@@ -1,0 +1,52 @@
+
+
+.dasboardContainer {
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(236, 223, 180);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dashboardItem {
+        width: fit-content;
+        height: fit-content;
+
+        margin: 1rem;
+        padding: 2rem;
+        background-color: rgb(241, 170, 36);
+
+        color: black;
+        font-size: 3rem;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: Tahoma;
+        font-weight: 600;
+
+        border-radius: 20px;
+        cursor: pointer;
+  
+        border-width: 0.3rem;
+        border-style: groove;
+        border-color: rgb(0, 0, 0);
+
+        text-shadow: 0 7px 26px #000000;
+
+        transition: filter 0.8s ease-in-out;
+
+        &:hover {
+            font-size: 3.2rem;
+            
+            -webkit-box-shadow: 1px 1px 20px 0 #000000;
+            -moz-box-shadow: 1px 1px 20px 0 #000000;
+            box-shadow: 1px 1px 20px 0 #000000;
+        }
+    }
+
+}
+                
+                
