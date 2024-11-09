@@ -1,0 +1,12 @@
+[
+  { "palabraIndice": 1, "palabraEspanol": "perro", "palabraIngles": "dog" },
+  { "palabraIndice": 2, "palabraEspanol": "casa", "palabraIngles": "house" },
+  { "palabraIndice": 3, "palabraEspanol": "libro", "palabraIngles": "book" },
+  { "palabraIndice": 4, "palabraEspanol": "feliz", "palabraIngles": "happy" },
+  { "palabraIndice": 5, "palabraEspanol": "rápido", "palabraIngles": "fast" },
+  { "palabraIndice": 6, "palabraEspanol": "cielo", "palabraIngles": "sky" },
+  { "palabraIndice": 7, "palabraEspanol": "amigo", "palabraIngles": "friend" },
+  { "palabraIndice": 8, "palabraEspanol": "comida", "palabraIngles": "food" },
+  { "palabraIndice": 9, "palabraEspanol": "escuela", "palabraIngles": "school" },
+  { "palabraIndice": 10, "palabraEspanol": "viaje", "palabraIngles": "trip" }
+]
