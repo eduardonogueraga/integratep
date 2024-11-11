@@ -16,17 +16,27 @@
 
     <div class="cardbox-group">
         <div class="cardBox">
-            <div class="card" (mouseenter)="setMostrarAyuda(true)" (mouseout)="setMostrarAyuda(false)">
+            <div class="card" id="card">
               <div class="front flashcards-texto">
                 <h3>{{ palabraActual }}</h3>
-                <p>Hover to flip</p>
-                <strong>&#x21bb;</strong>
               </div>
               <div class="back flashcards-texto">
                 <h3>{{ palabraActual }}</h3>
               </div>
             </div>
           </div>
+
+          <div class="botonera-group">
+            <button class="botonFlip" (click)="flipCard(); setMostrarAyudaToogle()">
+                Flip
+                <strong>&#x21bb;</strong>
+            </button>
+
+            <button class="botonReproducir" >
+                Reproducir
+            </button>
+          </div>
+        
     </div>
 
       <div class="input-group">

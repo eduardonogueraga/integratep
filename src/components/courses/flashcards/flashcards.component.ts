@@ -60,4 +60,19 @@ export class FlashcardsComponent {
     this.actualizarPalabraActual(); // Muestra la traducción en español
   }
 
+  setMostrarAyudaToogle(): void {
+    this.mostrarEspanol = !this.mostrarEspanol; // Activa el modo para mostrar la palabra en español
+    this.actualizarPalabraActual(); // Muestra la traducción en español
+  }
+
+  
+
+  // Función para aplicar el giro
+  flipCard(): void {
+    const cardElement = document.getElementById('card');
+    if (cardElement) {
+      cardElement.classList.toggle('flipped'); // Alterna la clase 'flipped' en el elemento
+    }
+  }
+
 }
