@@ -2,10 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { interval } from 'rxjs';
 
+import { RouterOutlet,RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-flashcards',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet,RouterModule],
   templateUrl: './flashcards.component.html',
   styleUrl: './flashcards.component.scss'
 })
@@ -22,14 +24,16 @@ export class FlashcardsComponent {
     this.cargarDatos(); // Cargar el JSON al iniciar el componente
 
     // Cambia al siguiente término cada 5 segundos
+    /*
     interval(5000).subscribe(() => {
       this.mostrarSiguientePalabra();
     });
+    */
 
   }
 
   cargarDatos(): void {
-    this.http.get<{ palabraIndice: number; palabraEspanol: string; palabraIngles: string }[]>('../../../assets/flashcards/jsons/prueba.json').subscribe(
+    this.http.get<{ palabraIndice: number; palabraEspanol: string; palabraIngles: string }[]>('/assets/flashcards/jsons/prueba.json').subscribe(
       (data) => {
         this.palabras = data;
         if (this.palabras.length > 0) {
@@ -51,8 +55,8 @@ export class FlashcardsComponent {
     this.actualizarPalabraActual(); // Actualiza la palabra actual
   }
 
-  mostrarAyuda(): void {
-    this.mostrarEspanol = true; // Activa el modo para mostrar la palabra en español
+  setMostrarAyuda(valor: boolean): void {
+    this.mostrarEspanol = valor; // Activa el modo para mostrar la palabra en español
     this.actualizarPalabraActual(); // Muestra la traducción en español
   }
 
