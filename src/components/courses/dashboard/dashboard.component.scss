@@ -12,14 +12,11 @@
     align-items: center;
 
     .dashboardItem {
-        width: fit-content;
-        height: fit-content;
-
+        width: 30rem;
+        height: 40rem;
         margin: 1rem;
         padding: 2rem;
-        background-color: rgb(241, 170, 36);
 
-        color: black;
         font-size: 3rem;
         text-align: center;
         text-decoration: none;
@@ -27,14 +24,13 @@
         font-family: Tahoma;
         font-weight: 600;
 
+        background-color: rgb(241, 170, 36);
         border-radius: 20px;
         cursor: pointer;
   
         border-width: 0.3rem;
         border-style: groove;
         border-color: rgb(0, 0, 0);
-
-        text-shadow: 0 7px 26px #000000;
 
         transition: filter 0.8s ease-in-out;
 
@@ -44,6 +40,45 @@
             -webkit-box-shadow: 1px 1px 20px 0 #000000;
             -moz-box-shadow: 1px 1px 20px 0 #000000;
             box-shadow: 1px 1px 20px 0 #000000;
+
+            img {
+                transition: all ease-in-out 1s;
+                filter: blur(2px) saturate(1.5);
+            }
+        }
+
+        .containerImage{
+            width: 100%;  // Ajusta el tamaño del contenedor según tus necesidades
+            height: auto; // Ajusta el tamaño del contenedor según tus necesidades
+            overflow: hidden; // Oculta las partes de la imagen que sobresalen
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; // Escala y recorta la imagen para llenar el contenedor
+                object-position: center; // Centra la imagen dentro del contenedor
+            }
+        }
+
+        h3 {
+            text-shadow: 0 7px 26px #000000;
+            font-size: 3rem;
+            text-align: center;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: Tahoma;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1rem;
+            text-align: center;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: Tahoma;
+            font-weight: 600;
+
         }
     }
 

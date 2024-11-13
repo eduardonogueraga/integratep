@@ -1,0 +1,13 @@
+<div class="talleres-container">
+    <div class="talleres-list">
+      <div class="taller-card" *ngFor="let taller of talleres">
+        <img [src]="taller.image" alt="Imagen de {{ taller.title }}" class="taller-image">
+        <div class="taller-info">
+          <h3>{{ taller.title }}</h3>
+          <p>{{ taller.instructor }}</p>
+          <p class="description">{{ taller.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
