@@ -1,29 +1,18 @@
-<!-- component -->
-<div class="flex w-screen h-screen text-gray-700">
+<div class="dasboard_Container">
 
-	<!-- Component Start -->
-
-            <div class="flex flex-col w-56 border-r border-gray-300">
-
-                <button class="relative text-sm focus:outline-none group">
-                    <div class="flex items-center justify-between w-full h-16 px-4 border-b border-gray-300 hover:bg-gray-300">
-                        
-                        <a class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-300" href="#">
-                            <span class="font-medium">
-                                Volver atrás
-                            </span> 
-                        </a>
-                    </div>   
-                </button>
-
-            </div>
-            
-            <div class="flex flex-col flex-grow">
-                <div class="flex items-center flex-shrink-0 h-16 px-8 border-b border-gray-300">
-                    <h1 class="text-lg font-medium">Dashboard</h1>
-            </div>
-
-            <div class="dasboardContainer">
+    
+    <div class="dasboardHeaderContainer">
+        <a class="" routerLink="/">
+                Volver atrás
+        </a>
+        
+        <div class="mainTitleContainer">
+            <h1 class="mainTitle">Dashboard</h1>
+            <p>Todos nuestros talleres y herramientas</p>
+        </div>
+    </div>
+    
+            <div class="dasboard_main_Container">
                 
                 <div class="dashboardItem">
                     <a routerLink="/dashboard/talleres">
@@ -36,6 +25,16 @@
                 </div>
 
                 <div class="dashboardItem">
+                    <a routerLink="/dashboard/Casosdeexito">
+                        <div class="containerImage">
+                            <img src="/assets/images/casosdeexito.png" alt="imagen flashcard integrateb">
+                        </div>
+                        <h3>Casos de éxito</h3>
+                        <p>Conoce historias de éxito de personas migrantes que han mejorado su vida integrandose en nuestra sociedad</p>
+                    </a>
+                </div>
+
+                <div class="dashboardItem">
                     <a routerLink="/dashboard/flashcards">
                         <div class="containerImage">
                             <img src="/assets/images/flashcards.png" alt="imagen flashcard integrateb">
@@ -44,6 +43,16 @@
                         <p>Herramienta interactiva que ha demostrado un gran resultado y adaptabilidad según los últimos estudios</p>
                     </a>
                 </div>  
+
+                <div class="dashboardItem">
+                    <a routerLink="/dashboard/Ofertasdetrabajo">
+                        <div class="containerImage">
+                            <img src="/assets/images/ofertastrabajo.png" alt="imagen flashcard integrateb">
+                        </div>
+                        <h3>Ofertas de trabajo</h3>
+                        <p>Aqui encontrarás #jobOpportunities dirigadas a personas migrantes para ayudarlas a integrarse en el mundo laboral</p>
+                    </a>
+                </div>
 
             </div>
 

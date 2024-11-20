@@ -1,23 +1,53 @@
 
 
-.dasboardContainer {
+
+.dasboard_Container{
+
+        width: 100vw;
+        min-height: 100vh;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: rgb(236, 223, 180);
+
+        .dasboardHeaderContainer{
+
+            background-color: rgb(149, 74, 247);
+
+            -webkit-box-shadow: 1px 1px 20px 0 #000000;
+            -moz-box-shadow: 1px 1px 20px 0 #000000;
+            box-shadow: 1px 1px 10px 0 #000000;
+
+            .mainTitleContainer .mainTitle {
+                font-size: 4rem;
+                font-weight: 500;
+            }
+
+        }
+        
+
+}
+
+.dasboard_main_Container {
 
     width: 100%;
-    height: 100%;
-
-    background-color: rgb(236, 223, 180);
+    height: auto;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     .dashboardItem {
         width: 30rem;
-        height: 40rem;
+        min-height: 10em;
+        height: auto;
         margin: 1rem;
         padding: 2rem;
 
-        font-size: 3rem;
+        font-size: 1em;
         text-align: center;
         text-decoration: none;
         color: #FFFFFF;
@@ -72,7 +102,7 @@
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1em;
             text-align: center;
             text-decoration: none;
             color: #FFFFFF;
